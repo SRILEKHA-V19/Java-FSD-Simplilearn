@@ -77,26 +77,25 @@ public class StartClass {
                         ch = Character.getNumericValue(ch);
 
                         String fileName = "";
-                        FileOperations fop = new FileOperations();
 
                         // nested switch for File Sub-Menu options
                         switch(ch){
                             case 1:
                                 System.out.println("Enter the name of the file to be Added (without extension): ");
                                 fileName = sc.next();
-                                fop.addFile(fileName);
+                                FileOperations.addFile(fileName);
                                 System.out.println();
                                 break;
                             case 2:
                                 System.out.println("Enter the name of the file to be Deleted (without extension): ");
                                 fileName = sc.next();
-                                fop.deleteFile(fileName);
+                                FileOperations.deleteFile(fileName);
                                 System.out.println();
                                 break;
                             case 3:
                                 System.out.println("Enter the name of the file to be Searched (without extension): ");
                                 fileName = sc.next();
-                                fop.searchFile(fileName);
+                                FileOperations.searchFile(fileName);
                                 System.out.println();
                                 break;
                             case 4:
